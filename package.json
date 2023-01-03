@@ -1,0 +1,26 @@
+{
+  "name": "simple-fm",
+  "version": "1.0.0",
+  "description": "Simple file manager, built with Bootstrap and Electron",
+  "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nazar1ua/simple-fm.git"
+  },
+  "author": "Nazar Niphone",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^6.0.4",
+    "@electron/remote": "^2.0.9",
+    "electron": "^22.0.0"
+  },
+  "dependencies": {
+    "bootstrap-icons": "^1.10.3",
+    "jade": "^1.11.0",
+    "jquery": "^3.6.3",
+    "underscore": "^1.13.6"
+  }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'"> -->
+   <title>SimpleF Manager</title>
+
+   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+   <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-secondary-subtle d-flex gap-2 overflow-hidden" style="max-height: 100vh;">
+   <div class="w-25 p-2">
+      <ul class="nav nav-pills flex-column" id="sidebar">
+         <li>Улюблені</li>
+         <li class="nav-item">
+            <a href="#" fm-path="~" class="nav-link active">
+               <i class="bi bi-house-fill"></i> Домівка
+            </a>
+         </li>
+         <li class="nav-item">
+            <a href="#" fm-path="~/Завантаження" class="nav-link">
+               <i class="bi bi-file-earmark-arrow-down"></i> Завантаження
+            </a>
+         </li>
+         <li><hr></li>
+         <li><a href="#" onclick="about()">Про програму</a></li>
+      </ul>
+   </div>
+
+   <div class="w-75">
+      <div>
+         <ul id="address-bar" class="breadcrumb"></ul>
+      </div>
+
+      <div class="bg-white rounded overflow-y-auto" style="max-height: calc(100% - 2.5rem);">
+         <ul id="files" class="m-1 position-relative"></ul>
+      </div>
+   </div>
+
+   <script src="./script.js"></script>
+</body>
+
+</html>
